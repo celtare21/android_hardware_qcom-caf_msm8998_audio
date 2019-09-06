@@ -39,9 +39,7 @@ LOCAL_C_INCLUDES := \
     $(call project-path-for,qcom-audio)/hal \
     $(call include-path-for, audio-effects)
 
-LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
-LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/techpack/audio/include
-LOCAL_ADDITIONAL_DEPENDENCIES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
+LOCAL_HEADER_LIBRARIES += generated_kernel_headers
 
 ifeq ($(strip $(AUDIO_FEATURE_ENABLED_DLKM)),true)
   LOCAL_HEADER_LIBRARIES += audio_kernel_headers
@@ -98,9 +96,7 @@ LOCAL_C_INCLUDES := \
     $(call project-path-for,qcom-audio)/hal/$(AUDIO_PLATFORM) \
     $(call include-path-for, audio-effects)
 
-LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
-LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/techpack/audio/include
-LOCAL_ADDITIONAL_DEPENDENCIES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
+LOCAL_HEADER_LIBRARIES += generated_kernel_headers
 
 ifeq ($(strip $(AUDIO_FEATURE_ENABLED_DLKM)),true)
   LOCAL_HEADER_LIBRARIES += audio_kernel_headers
@@ -158,9 +154,7 @@ LOCAL_C_INCLUDES := \
     $(TARGET_OUT_HEADERS)/mm-audio/surround_sound_3mic/ \
     $(TARGET_OUT_HEADERS)/common/inc/
 
-LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
-LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/techpack/audio/include
-LOCAL_ADDITIONAL_DEPENDENCIES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
+LOCAL_HEADER_LIBRARIES += generated_kernel_headers
 
 ifeq ($(strip $(AUDIO_FEATURE_ENABLED_DLKM)),true)
   LOCAL_HEADER_LIBRARIES += audio_kernel_headers
@@ -217,9 +211,7 @@ LOCAL_C_INCLUDES := \
     $(PRIMARY_HAL_PATH)/$(AUDIO_PLATFORM) \
     $(call include-path-for, audio-effects)
 
-LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
-LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/techpack/audio/include
-LOCAL_ADDITIONAL_DEPENDENCIES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
+LOCAL_HEADER_LIBRARIES += generated_kernel_headers
 
 ifeq ($(strip $(AUDIO_FEATURE_ENABLED_DLKM)),true)
   LOCAL_HEADER_LIBRARIES += audio_kernel_headers
@@ -277,9 +269,7 @@ LOCAL_C_INCLUDES := \
     vendor/qcom/opensource/audio-kernel/include/uapi/ \
     $(call include-path-for, audio-effects)
 
-LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
-LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/techpack/audio/include
-LOCAL_ADDITIONAL_DEPENDENCIES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
+LOCAL_HEADER_LIBRARIES += generated_kernel_headers
 
 LOCAL_HEADER_LIBRARIES += libhardware_headers
 LOCAL_HEADER_LIBRARIES += libsystem_headers
@@ -332,9 +322,7 @@ LOCAL_C_INCLUDES := \
     vendor/qcom/opensource/audio-kernel/include/uapi/ \
     $(call include-path-for, audio-effects)
 
-LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
-LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/techpack/audio/include
-LOCAL_ADDITIONAL_DEPENDENCIES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
+LOCAL_HEADER_LIBRARIES += generated_kernel_headers
 
 LOCAL_HEADER_LIBRARIES += libhardware_headers
 LOCAL_HEADER_LIBRARIES += libsystem_headers
@@ -385,9 +373,7 @@ LOCAL_C_INCLUDES := \
     system/media/audio_utils/include \
     $(call include-path-for, audio-route) \
 
-LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
-LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/techpack/audio/include
-LOCAL_ADDITIONAL_DEPENDENCIES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
+LOCAL_HEADER_LIBRARIES += generated_kernel_headers
 
 ifeq ($(strip $(AUDIO_FEATURE_ENABLED_DLKM)),true)
   LOCAL_HEADER_LIBRARIES += audio_kernel_headers
@@ -445,9 +431,7 @@ LOCAL_C_INCLUDES := \
     system/media/audio_utils/include \
     $(call include-path-for, audio-route) \
 
-LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
-LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/techpack/audio/include
-LOCAL_ADDITIONAL_DEPENDENCIES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
+LOCAL_HEADER_LIBRARIES += generated_kernel_headers
 
 ifeq ($(strip $(AUDIO_FEATURE_ENABLED_DLKM)),true)
   LOCAL_HEADER_LIBRARIES += audio_kernel_headers
@@ -504,9 +488,7 @@ LOCAL_C_INCLUDES := \
     system/media/audio_utils/include \
     $(call include-path-for, audio-route) \
 
-LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
-LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/techpack/audio/include
-LOCAL_ADDITIONAL_DEPENDENCIES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
+LOCAL_HEADER_LIBRARIES += generated_kernel_headers
 
 ifeq ($(strip $(AUDIO_FEATURE_ENABLED_DLKM)),true)
   LOCAL_HEADER_LIBRARIES += audio_kernel_headers
@@ -566,9 +548,7 @@ LOCAL_C_INCLUDES := \
     $(TARGET_OUT_HEADERS)/mm-audio/audio-parsers \
     $(call include-path-for, audio-route) \
 
-LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
-LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/techpack/audio/include
-LOCAL_ADDITIONAL_DEPENDENCIES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
+LOCAL_HEADER_LIBRARIES += generated_kernel_headers
 
 ifeq ($(strip $(AUDIO_FEATURE_ENABLED_DLKM)),true)
   LOCAL_HEADER_LIBRARIES += audio_kernel_headers
@@ -636,9 +616,7 @@ LOCAL_C_INCLUDES := \
     system/media/audio_utils/include \
     $(call include-path-for, audio-route) \
 
-LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
-LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/techpack/audio/include
-LOCAL_ADDITIONAL_DEPENDENCIES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
+LOCAL_HEADER_LIBRARIES += generated_kernel_headers
 
 ifeq ($(strip $(AUDIO_FEATURE_ENABLED_DLKM)),true)
   LOCAL_HEADER_LIBRARIES += audio_kernel_headers
@@ -695,9 +673,7 @@ LOCAL_C_INCLUDES := \
     system/media/audio_utils/include \
     $(call include-path-for, audio-route) \
 
-LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
-LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/techpack/audio/include
-LOCAL_ADDITIONAL_DEPENDENCIES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
+LOCAL_HEADER_LIBRARIES += generated_kernel_headers
 
 ifeq ($(strip $(AUDIO_FEATURE_ENABLED_DLKM)),true)
   LOCAL_HEADER_LIBRARIES += audio_kernel_headers
@@ -754,9 +730,7 @@ LOCAL_C_INCLUDES := \
     system/media/audio_utils/include \
     $(call include-path-for, audio-route) \
 
-LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
-LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/techpack/audio/include
-LOCAL_ADDITIONAL_DEPENDENCIES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
+LOCAL_HEADER_LIBRARIES += generated_kernel_headers
 
 ifeq ($(strip $(AUDIO_FEATURE_ENABLED_DLKM)),true)
   LOCAL_HEADER_LIBRARIES += audio_kernel_headers
@@ -811,9 +785,7 @@ LOCAL_C_INCLUDES := \
     system/media/audio_utils/include \
     $(call include-path-for, audio-route) \
 
-LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
-LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/techpack/audio/include
-LOCAL_ADDITIONAL_DEPENDENCIES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
+LOCAL_HEADER_LIBRARIES += generated_kernel_headers
 
 ifeq ($(strip $(AUDIO_FEATURE_ENABLED_DLKM)),true)
   LOCAL_HEADER_LIBRARIES += audio_kernel_headers
